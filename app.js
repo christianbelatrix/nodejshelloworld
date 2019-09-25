@@ -4,6 +4,6 @@ var app = express();
 app.get('/', function(req, res) {
     res.send('Hello World');
 });
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3003, function() {
     console.log('GET: hello world')
 });
